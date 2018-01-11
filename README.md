@@ -28,6 +28,12 @@ $ source venv/bin/postactivate
 echo "from .dev import *" > ddsunb/settings/__init__.py
 ```
 
+### Executar aplicação local
+
+```
+$ make run
+```
+
 ### Configurando Banco de Dados Local
 
 ```
@@ -57,5 +63,4 @@ $ make migrate
 ```
 $ heroku config:set DJANGO_SETTINGS_MODULE=ddsunb.settings.prod
 $ heroku run python manage.py syncdb
-$ heroku local web # test local
 ```
