@@ -1,0 +1,5 @@
+Django==2.0.1   # django
+psycopg2        # PostgreSQL + Python
+
+pytest          # for python tests
+pytest-django   # for django tests
