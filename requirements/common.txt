@@ -9,5 +9,5 @@ pytest-django
 
 # Deployment
 django-pipeline==1.5.1
-whitenoise
+whitenoise=3.3.1
 dj_database_url

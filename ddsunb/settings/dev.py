@@ -3,7 +3,7 @@ from .base import *
 DEBUG = True
 GOOGLE_ANALYTICS_TAG = 0
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
 
 DATABASES = {
     'default': {

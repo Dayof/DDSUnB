@@ -22,6 +22,12 @@ $ source venv/bin/activate
 $ source venv/bin/postactivate
 ```
 
+- Criar ``__init__.py`` dentro da pasta settings para apontar o arquivo de configurações do estágio de desenvolvimento:
+
+```
+echo "from .dev import *" > ddsunb/settings/__init__.py
+```
+
 ### Configurando Banco de Dados Local
 
 ```
@@ -46,15 +52,10 @@ $ make migrate
     - heroku create ddsunb
     - git push heroku master
 
-<!-- - Criar ``__init__.py`` dentro da pasta settings decidindo qual estágio do projeto, desenvolvimento ou produção, e.g.:
-
-```
-from .prod import *
-``` -->
-<!--
 - Configurar o Heroku
 
 ```
-$ heroku config:set DJANGO_SETTINGS_MODULE=settings.prod
-$ heroku run python manage.py migrate
-``` -->
+$ heroku config:set DJANGO_SETTINGS_MODULE=ddsunb.settings.prod
+$ heroku run python manage.py syncdb
+$ heroku local web # test local
+```
