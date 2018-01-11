@@ -1,3 +1,0 @@
--r common.txt
-
-jasmine==2.0.1 # for javascript unit tets
