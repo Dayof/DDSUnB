@@ -1,5 +1,13 @@
 Django==2.0.1   # django
-psycopg2        # PostgreSQL + Python
 
-pytest          # for python tests
-pytest-django   # for django tests
+# Databases
+psycopg2==2.5.4
+
+# Tests
+pytest
+pytest-django
+
+# Deployment
+django-pipeline==1.5.1
+whitenoise
+dj_database_url

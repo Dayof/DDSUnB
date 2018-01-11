@@ -1,11 +1,12 @@
-.PHONY: migrate installdev
-
 migrate:
-	python manage.py makemigrations
+	python manage.py makemigrations;\
 	python manage.py migrate
 
-installdev:
+installd:
 	pip install -r requirements/dev.txt
 
-installprod:
+installp:
 	pip install -r requirements/prod.txt
+
+
+.PHONY: start migrate installd
